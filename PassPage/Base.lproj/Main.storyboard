@@ -18,25 +18,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="center" axis="vertical" alignment="top" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="VME-zO-CYb">
-                                <rect key="frame" x="79.5" y="326" width="255" height="244"/>
+                                <rect key="frame" x="83" y="327" width="248" height="242"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="L4J-pe-6H6">
-                                        <rect key="frame" x="0.0" y="0.0" width="255" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="248" height="100"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eSF-NL-gc0">
-                                                <rect key="frame" x="0.0" y="0.0" width="255" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="248" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cDH-UU-i9w">
-                                                <rect key="frame" x="0.0" y="66" width="255" height="34"/>
+                                                <rect key="frame" x="0.0" y="66" width="248" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPR-km-kRL">
-                                        <rect key="frame" x="0.0" y="136" width="255" height="40"/>
+                                        <rect key="frame" x="0.0" y="136" width="248" height="40"/>
                                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="Log In">
@@ -47,10 +47,10 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="MQH-uV-afS">
-                                        <rect key="frame" x="0.0" y="212" width="255" height="32"/>
+                                        <rect key="frame" x="0.0" y="212" width="248" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xel-SC-clU">
-                                                <rect key="frame" x="0.0" y="0.0" width="121" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="121" height="30"/>
                                                 <state key="normal" title="Forgot user name">
                                                     <color key="titleColor" systemColor="systemGrayColor"/>
                                                 </state>
@@ -59,8 +59,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRF-Ds-yub">
-                                                <rect key="frame" x="133" y="0.0" width="122" height="32"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <rect key="frame" x="133" y="0.0" width="115" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="Forgot password">
                                                     <color key="titleColor" systemColor="systemGrayColor"/>
                                                 </state>
