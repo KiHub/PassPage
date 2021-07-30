@@ -13,6 +13,7 @@
 		0B16ADC026B44913003D3B3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B16ADBE26B44913003D3B3F /* Main.storyboard */; };
 		0B16ADC226B44915003D3B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B16ADC126B44915003D3B3F /* Assets.xcassets */; };
 		0B16ADC526B44915003D3B3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B16ADC326B44915003D3B3F /* LaunchScreen.storyboard */; };
+		0B16ADCF26B45438003D3B3F /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B16ADCE26B45438003D3B3F /* HelloViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0B16ADC126B44915003D3B3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B16ADC426B44915003D3B3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B16ADC626B44915003D3B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B16ADCE26B45438003D3B3F /* HelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				0B16ADBA26B44913003D3B3F /* SceneDelegate.swift */,
 				0B16ADBC26B44913003D3B3F /* ViewController.swift */,
 				0B16ADBE26B44913003D3B3F /* Main.storyboard */,
+				0B16ADCE26B45438003D3B3F /* HelloViewController.swift */,
 				0B16ADC126B44915003D3B3F /* Assets.xcassets */,
 				0B16ADC326B44915003D3B3F /* LaunchScreen.storyboard */,
 				0B16ADC626B44915003D3B3F /* Info.plist */,
@@ -140,6 +143,7 @@
 				0B16ADBD26B44913003D3B3F /* ViewController.swift in Sources */,
 				0B16ADB926B44913003D3B3F /* AppDelegate.swift in Sources */,
 				0B16ADBB26B44913003D3B3F /* SceneDelegate.swift in Sources */,
+				0B16ADCF26B45438003D3B3F /* HelloViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 327B2F3V2J;
 				INFOPLIST_FILE = PassPage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 327B2F3V2J;
 				INFOPLIST_FILE = PassPage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
