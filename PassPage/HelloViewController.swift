@@ -8,7 +8,10 @@
 import UIKit
 
 class HelloViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var helloLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
