@@ -55,14 +55,28 @@ class ViewController: UIViewController {
     }
     
     @IBAction func forgotUsernamePressed(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "You can try", message: "Kirill", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Thanks", style: .default, handler: nil)
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
+        
     }
     
     @IBAction func forgotPasswordPressed(_ sender: Any) {
+        let alert = UIAlertController(title: "Just try", message: "12345", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Yeah", style: .default, handler: nil)
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
+        
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        <#code#>
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let helloVC = segue.destination as! HelloViewController
+        helloVC.helloText = nameTextField.text
+        
+        
+    }
     
     
     

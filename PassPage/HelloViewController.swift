@@ -9,11 +9,18 @@ import UIKit
 
 class HelloViewController: UIViewController {
     
+    var helloText: String!
+    
     
     @IBOutlet weak var helloLabel: UILabel!
     
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nameLabel.text = helloText
 
         // Do any additional setup after loading the view.
     }

@@ -105,9 +105,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="th3-lQ-7U4">
-                                <rect key="frame" x="145.5" y="351" width="123" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="th3-lQ-7U4">
+                                <rect key="frame" x="147.5" y="311" width="119" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LnZ-UR-oOw">
+                                <rect key="frame" x="171.5" y="379" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -115,13 +121,16 @@
                         <viewLayoutGuide key="safeArea" id="Isu-UY-QHL"/>
                         <color key="backgroundColor" red="0.071908213198184967" green="0.82356208562850952" blue="0.5803942084312439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="th3-lQ-7U4" firstAttribute="centerY" secondItem="qWM-lb-rmp" secondAttribute="centerY" constant="-40" id="CJw-mo-cNM"/>
+                            <constraint firstItem="LnZ-UR-oOw" firstAttribute="centerX" secondItem="qWM-lb-rmp" secondAttribute="centerX" id="843-tU-86O"/>
+                            <constraint firstItem="th3-lQ-7U4" firstAttribute="centerY" secondItem="qWM-lb-rmp" secondAttribute="centerY" constant="-80" id="CJw-mo-cNM"/>
                             <constraint firstItem="th3-lQ-7U4" firstAttribute="centerX" secondItem="qWM-lb-rmp" secondAttribute="centerX" id="anw-9a-XuA"/>
+                            <constraint firstItem="LnZ-UR-oOw" firstAttribute="top" secondItem="th3-lQ-7U4" secondAttribute="bottom" constant="8" symbolic="YES" id="mbI-sj-r3y"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zt2-gG-STr"/>
                     <connections>
                         <outlet property="helloLabel" destination="th3-lQ-7U4" id="uDp-fN-EKa"/>
+                        <outlet property="nameLabel" destination="LnZ-UR-oOw" id="Fbn-Dq-uMr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpK-i4-PqP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
