@@ -17,6 +17,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     
+    let name = "Kirill"
+    let password = "12345"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +39,7 @@ class ViewController: UIViewController {
 //        else {return}
         
         
-        if nameTextField.text == "Kirill" && passwordTextField.text == "12345"  {
+        if nameTextField.text == name && passwordTextField.text == password  {
             performSegue(withIdentifier: "showHello", sender: nil)
         } else {
             print("Error")
@@ -56,7 +59,7 @@ class ViewController: UIViewController {
     
     @IBAction func forgotUsernamePressed(_ sender: Any) {
         
-        let alert = UIAlertController(title: "You can try", message: "Kirill", preferredStyle: .alert)
+        let alert = UIAlertController(title: "You can try", message: name, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Thanks", style: .default, handler: nil)
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
@@ -64,7 +67,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func forgotPasswordPressed(_ sender: Any) {
-        let alert = UIAlertController(title: "Just try", message: "12345", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Just try", message: password, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Yeah", style: .default, handler: nil)
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
