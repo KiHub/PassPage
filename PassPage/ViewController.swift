@@ -33,7 +33,10 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction func loginPressed(_ sender: UIButton) {
+    
+    @IBAction func loginPressed() {
+    
+    // @IBAction func loginPressed(_ sender: UIButton) {
         
 //        guard nameTextField.text!.isEmpty && passwordTextField.text?.isEmpty == false
 //        else {return}
@@ -73,6 +76,11 @@ class ViewController: UIViewController {
         present(alert, animated: true, completion: nil)
         
     }
+    @IBAction func unwindSegue(segue: UIStoryboardSegue) {
+        nameTextField.text = nil
+        passwordTextField.text = nil
+    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let helloVC = segue.destination as! HelloViewController
@@ -84,4 +92,26 @@ class ViewController: UIViewController {
     
     
 }
+
+extension ViewController: UITextFieldDelegate {
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == nameTextField {
+            textField.resignFirstResponder()
+            passwordTextField.becomeFirstResponder()
+        } else {
+            loginPressed()
+        }
+        return true
+    }
+    
+  
+    
+}
+
 
